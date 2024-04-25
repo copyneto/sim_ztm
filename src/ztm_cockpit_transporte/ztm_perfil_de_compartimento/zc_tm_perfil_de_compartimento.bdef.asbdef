@@ -1,0 +1,9 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_TM_PERFIL_DE_COMPARTIMENTO //alias <alias_name>
+{
+  use create;
+  use update;
+  use delete;
+}

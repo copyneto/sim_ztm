@@ -1,0 +1,31 @@
+@Metadata.layer: #CORE
+annotate view ZC_TM_SIM_FRETES_LOG
+    with 
+{
+    @UI.lineItem: [{ position: 10 }]
+    IdProcesso;
+    @UI.lineItem: [{ position: 20 }]
+    IdMsgs;
+    @UI.lineItem: [{ position: 30 }]
+    Processo;
+    @UI.lineItem: [{ position: 40 }]
+    Type;
+    @UI.lineItem: [{ position: 50 }]
+    Id;
+    @UI.lineItem: [{ position: 60 }]
+    Numero;
+    @UI.lineItem: [{ position: 70 }]
+    Message;
+    @UI.lineItem: [{ position: 80 }]
+    Status;
+    @UI.lineItem: [{ position: 90 }]
+    CreatedBy;
+    @UI.lineItem: [{ position: 100 }]
+    CreatedAt;
+    @UI.lineItem: [{ position: 110 }]
+    LastChangedBy;
+    @UI.lineItem: [{ position: 120 }]
+    LastChangedAt;
+    @UI.lineItem: [{ position: 130 }]
+    LocalLastChangedAt;
+}

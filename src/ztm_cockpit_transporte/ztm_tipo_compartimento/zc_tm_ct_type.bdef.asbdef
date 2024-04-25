@@ -1,0 +1,29 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_TM_CT_TYPE alias _Type
+{
+  use create;
+  use update;
+  use delete;
+
+  use association _Capacity { create; }
+}
+
+define behavior for ZC_TM_CT_CAPACITY alias _Capacity
+{
+  use update;
+  use delete;
+
+  use association _Type;
+  use association _Step { create; }
+}
+
+define behavior for ZC_TM_CT_STEP alias _Step
+{
+  use update;
+  use delete;
+
+  use association _Type;
+  use association _Capacity;
+}

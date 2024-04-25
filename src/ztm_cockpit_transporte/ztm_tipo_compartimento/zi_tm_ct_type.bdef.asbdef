@@ -1,0 +1,71 @@
+managed implementation in class zcltm_ct_type unique;
+strict ( 2 );
+
+define behavior for ZI_TM_CT_TYPE alias _Type
+persistent table /sapapo/ctype
+lock master
+authorization master ( instance )
+{
+  create;
+  update;
+  delete ( features : instance );
+
+  association _Capacity { create; }
+
+  field ( readonly : update ) CompartmentType;
+
+  mapping for /sapapo/ctype
+  {
+    CompartmentType = ctype;
+    UniqueOrder = unique_order;
+  }
+}
+
+define behavior for ZI_TM_CT_CAPACITY alias _Capacity
+persistent table /sapapo/ctcap
+lock dependent by _Type
+authorization dependent by _Type
+{
+  update;
+  delete;
+
+  association _Type;
+  association _Step { create; }
+
+  field ( readonly ) CompartmentType;
+  field ( readonly : update ) CompartmentUnit;
+
+  validation validateFields on save { create; update; }
+
+  mapping for /sapapo/ctcap
+  {
+    CompartmentType = ctype;
+    CompartmentUnit = ctunit;
+    CompartmentCapacity = ctcapa;
+  }
+}
+
+define behavior for ZI_TM_CT_STEP alias _Step
+persistent table /sapapo/ctstep
+lock dependent by _Type
+authorization dependent by _Type
+{
+  update;
+  delete;
+  association _Type;
+  association _Capacity;
+
+  field ( readonly ) CompartmentType, CompartmentUnit;
+  field ( readonly : update ) StepId;
+
+  validation validateFields on save { create; update; }
+
+  mapping for /sapapo/ctstep
+  {
+    CompartmentType = ctype;
+    CompartmentUnit = ctunit;
+    StepId = step_id;
+    CompartmentCapacity = ctcapa;
+    Flexible = flexible;
+  }
+}

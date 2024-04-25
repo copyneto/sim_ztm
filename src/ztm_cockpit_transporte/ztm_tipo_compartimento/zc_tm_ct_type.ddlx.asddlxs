@@ -1,0 +1,44 @@
+@Metadata.layer: #CORE
+
+@UI.headerInfo.title: { type: #STANDARD, value: 'CompartmentType' }
+@UI.headerInfo.typeName: 'Tipo de Compartimento'
+@UI.headerInfo.typeNamePlural: 'Tipos de Compartimento'
+@UI.presentationVariant: [{ sortOrder: [{ by: 'CompartmentType', direction:  #ASC }] }]
+
+@UI.lineItem: [{criticality: 'CompartmentTypeCriticality'}]
+
+annotate view ZC_TM_CT_TYPE with
+{
+  // ------------------------------------------------------
+  // Header information
+  // ------------------------------------------------------
+  @UI.facet: [ { id             : 'Type',
+                 purpose        : #STANDARD,
+                 type           : #IDENTIFICATION_REFERENCE,
+                 label          : 'Tipo',
+                 position       : 10 },
+
+               { id             : 'Capacity',
+                 purpose        : #STANDARD,
+                 type           : #LINEITEM_REFERENCE,
+                 label          : 'Capacidades',
+                 position       : 20,
+                 targetElement  : '_Capacity'}
+  ]
+
+  // ------------------------------------------------------
+  // Field information
+  // ------------------------------------------------------
+
+  @UI.lineItem:        [{ position: 10, criticality: 'CompartmentTypeCriticality', criticalityRepresentation: #WITHOUT_ICON }]
+  @UI.identification:  [{ position: 10, criticality: 'CompartmentTypeCriticality', criticalityRepresentation: #WITHOUT_ICON  }]
+  @UI.selectionField:  [{ position: 10 }]
+  CompartmentType;
+
+  @UI.hidden: true
+  CompartmentTypeCriticality;
+
+  @UI.lineItem:        [{ position: 20 }]
+  @UI.identification:  [{ position: 20 }]
+  UniqueOrder;
+}

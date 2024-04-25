@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCLTM_ORDEM_CARREGAMENTO</CLSNAME>
+    <LANGU>P</LANGU>
+    <DESCRIPT>Ordem de Carregamento</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CALL_FORM</CMPNAME>
+     <SCONAME>IV_RETURN</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Indica se a chamada terá retorno</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CALL_FORM</CMPNAME>
+     <SCONAME>IV_TOR_ID</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Documento</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CALL_FORM</CMPNAME>
+     <SCONAME>RV_PDF</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Data Element - Stream</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CALL_FORM_DANFE</CMPNAME>
+     <SCONAME>IV_DOCNUM</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Nº documento</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CALL_FORM_DANFE</CMPNAME>
+     <SCONAME>IV_VSTEL</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Local de expedição/ponto de recebimento</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DATA</CMPNAME>
+     <SCONAME>IV_TOR_ID</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Documento</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DATA</CMPNAME>
+     <SCONAME>RS_ORDEM_CARREGAMENTO</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Estrutura Formulário Ordem Carregamento Sispetro</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCLTM_EDOC_BR_FLEX</CLSNAME>
+    <LANGU>P</LANGU>
+    <DESCRIPT>Class for BAdI: BADI_EDOC_BR_FLEX</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_000001</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Campo de caracteres de comprimento 6</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_000010</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Campo de caracteres de comprimento 6</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_L</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Código de eliminação no documento de compras</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_LOEKZ</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Código de eliminação no documento de compras</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_DZTERM</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Chave de condições de pagamento</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>ATUALIZA_TABELA</CMPNAME>
+     <SCONAME>IV_CENARIO</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Código de um caractere</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ATUALIZA_TABELA</CMPNAME>
+     <SCONAME>RT_BAPIRET</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Tabela com informações de retorno BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>BUSCA_FRETE</CMPNAME>
+     <SCONAME>RT_BAPIRET</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Tabela com informações de retorno BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>BUSCA_TABELA</CMPNAME>
+     <SCONAME>IV_CHAVE_CTE</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Chave CTe</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>BUSCA_TABELA</CMPNAME>
+     <SCONAME>RV_CENARIO</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Código de um caractere</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CENARIO_TRANSF</CMPNAME>
+     <SCONAME>IO_CTE</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>eDocument Brazil: CT-e Entity</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CENARIO_TRANSF</CMPNAME>
+     <SCONAME>RT_BAPIRET</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Tabela com informações de retorno BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CENARIO_VENDA</CMPNAME>
+     <SCONAME>IO_CTE</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>eDocument Brazil: CT-e Entity</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DEFINE_CENARIO</CMPNAME>
+     <SCONAME>IO_CTE</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>eDocument Brazil: CT-e Entity</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DEFINE_CENARIO</CMPNAME>
+     <SCONAME>RV_CENARIO</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Código de um caractere</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EXECUTA_BAPI</CMPNAME>
+     <SCONAME>IO_CTE</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>eDocument Brazil: CT-e Entity</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EXECUTA_BAPI</CMPNAME>
+     <SCONAME>RT_BAPIRET</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Tabela com informações de retorno BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GRAVA_NFE_ENTRADA</CMPNAME>
+     <SCONAME>RT_BAPIRET</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Tabela com informações de retorno BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GRAVA_NFE_SAIDA</CMPNAME>
+     <SCONAME>RT_BAPIRET</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Tabela com informações de retorno BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>PREENCHE_BAPI</CMPNAME>
+     <SCONAME>IO_CTE</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>eDocument Brazil: CT-e Entity</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>PREENCHE_BAPI</CMPNAME>
+     <SCONAME>RT_BAPIRET</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Tabela com informações de retorno BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RETORNO_DOCNUM</CMPNAME>
+     <SCONAME>IO_CTE</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>eDocument Brazil: CT-e Entity</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RETORNO_DOCNUM</CMPNAME>
+     <SCONAME>RV_DOCNUM</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Nº documento</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

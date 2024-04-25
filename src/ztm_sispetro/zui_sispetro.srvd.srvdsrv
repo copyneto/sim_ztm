@@ -1,0 +1,10 @@
+@EndUserText.label: 'Service Definition - Sispetro'
+define service ZUI_SISPETRO {
+  expose ZC_TM_SISPETRO;
+  expose ZC_TM_SISPETRO_LOG_ALL;
+  expose ZC_TM_SISPETRO_NOTA_FISCAL;
+  expose ZC_TM_ORDEM_CARREGAMENTO_COMP;
+  expose ZC_TM_ORDEM_CARREG_LISTA_LACRE;
+  expose ZI_TM_CE_ORDEM_CARREGAMENTO as PDF;
+  expose ZI_TM_CE_FORML_AMSTRG as AMST;
+}

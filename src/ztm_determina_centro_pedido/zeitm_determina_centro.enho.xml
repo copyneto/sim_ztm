@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>BADI_IMPL</TOOL>
+   <SHORTTEXT>Determinação de Centro no Pedido de Compra de Frete</SHORTTEXT>
+   <SPOT_NAME>/SCMTMS/ENH_SFIR_POSTING</SPOT_NAME>
+   <IMPL>
+    <ENH_BADI_IMPL_DATA>
+     <SPOT_NAME>/SCMTMS/ENH_SFIR_POSTING</SPOT_NAME>
+     <BADI_NAME>/SCMTMS/BADI_MODIFY_PO_DATA</BADI_NAME>
+     <IMPL_NAME>ZTM_DETERMINA_CENTRO_PO_FRETE</IMPL_NAME>
+     <IMPL_CLASS>ZCLTM_DET_CENTRO_PO_FRETE</IMPL_CLASS>
+     <ACTIVE>X</ACTIVE>
+     <IMPL_SHORTTEXT>Sample BADI implementation for /SCMTMS/BADI_MODIFY_PO_DATA</IMPL_SHORTTEXT>
+     <IMPL_SHORTTEXT_ID>42F2E9AFBE7F1ED8B5D0D342EB981ACD</IMPL_SHORTTEXT_ID>
+     <LOCKED_IN_CUSTOMIZING>X</LOCKED_IN_CUSTOMIZING>
+    </ENH_BADI_IMPL_DATA>
+   </IMPL>
+   <SOTR>
+    <item>
+     <HEADER>
+      <CONCEPT>639AF502C92A1EDEA6F013E984843536</CONCEPT>
+      <CREA_LAN>P</CREA_LAN>
+      <TRALA_TYPE>1</TRALA_TYPE>
+      <OBJID_VEC>AAI=</OBJID_VEC>
+     </HEADER>
+     <ENTRIES>
+      <SOTR_TEXT>
+       <CONCEPT>639AF502C92A1EDEA6F013E984843536</CONCEPT>
+       <LANGU>P</LANGU>
+       <LFD_NUM>0001</LFD_NUM>
+       <FLAG_CNTXT>X</FLAG_CNTXT>
+       <STATUS>R</STATUS>
+       <LENGTH>255</LENGTH>
+       <TEXT>Determinação de Centro no Pedido de Compra de Frete</TEXT>
+      </SOTR_TEXT>
+     </ENTRIES>
+    </item>
+   </SOTR>
+   <SOTR_USE>
+    <SOTR_USE>
+     <PGMID>R3TR</PGMID>
+     <OBJECT>ENHO</OBJECT>
+     <OBJ_NAME>ZEITM_DETERMINA_CENTRO</OBJ_NAME>
+     <CONCEPT>639AF502C92A1EDEA6F013E984843536</CONCEPT>
+     <LFD_NUM>0001</LFD_NUM>
+    </SOTR_USE>
+   </SOTR_USE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

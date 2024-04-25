@@ -1,0 +1,46 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: { typeName: 'Item',
+                     typeNamePlural: 'Itens' } }
+annotate view ZC_TM_ORDEM_CARREGAMENTO_COMP with
+{
+  @UI.facet: [
+  {   id: 'HEADER',
+     type: #IDENTIFICATION_REFERENCE,
+     label: 'Itens',
+     position: 10
+  }]
+  @UI.hidden: true
+  db_key;
+  @UI.hidden: true
+  parent_key;
+  @UI.hidden: true
+  Orp_Id;
+  @UI.hidden: true
+  zz_fu_db_key;
+  @UI.identification: [ { position: 10 } ]
+  @UI.lineItem: [{ position: 10 }]
+  ct_seq;
+  @UI.identification: [ { position: 20 } ]
+  @UI.lineItem: [{ position: 20 }]
+  zz_fu_max_util;
+  @UI.identification: [ { position: 30 } ]
+  @UI.lineItem: [{ position: 30 }]
+  item_descr;
+  @UI.hidden: true
+  gro_vol_uni;
+  @UI.identification: [ { position: 40 } ]
+  @UI.lineItem: [{ position: 40 }]
+  gro_vol_val;
+  @UI.hidden: true
+  res_id;
+  @UI.identification: [ { position: 50 } ]
+  @UI.lineItem: [{ position: 50 }]
+  envelope;
+  @UI.identification: [ { position: 60 } ]
+  @UI.lineItem: [{ position: 60 }]
+  unidadeFrete;
+
+  //  /* Associations */
+  //  _pai;
+
+}

@@ -1,0 +1,8 @@
+@EndUserText.label: 'Service Definition - Motoristas'
+define service ZUI_MOTORISTAS {
+  expose ZC_TM_MOTORISTAS;
+  expose ZC_TM_DOC_ADD;
+  expose ZI_TM_POPUP_DOC_ADD;
+  expose ZI_TM_VH_TIPO;
+  expose ZI_TM_VH_UF;
+}

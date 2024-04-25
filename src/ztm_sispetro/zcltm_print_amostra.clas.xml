@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCLTM_PRINT_AMOSTRA</CLSNAME>
+    <LANGU>P</LANGU>
+    <DESCRIPT>Impressão Amostra/Envelope</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_PRINT_NAME</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Nome de um objeto de formulário</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CALL_FORM</CMPNAME>
+     <SCONAME>IT_ORDEM</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>TOR ID</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CALL_FORM</CMPNAME>
+     <SCONAME>RV_PDF</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Data Element - Stream</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DATA</CMPNAME>
+     <SCONAME>IT_ORDEM</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Ordem de Frete</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DATA</CMPNAME>
+     <SCONAME>RT_PRINT_TAB</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Layout Impressão de Amostra</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_FUNCTION_NAME</CMPNAME>
+     <SCONAME>RV_FUNCTION</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Nome da função</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

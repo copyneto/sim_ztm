@@ -1,0 +1,49 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: { typeName: 'Documento adicional',
+                     typeNamePlural: 'Documentos adicionais' } }
+
+@UI.lineItem: [{criticality: 'NumeroCriticality'}]
+
+annotate view ZC_TM_DOC_ADD with
+{
+  @UI.facet: [{ id       : 'HEADER',
+                type     : #IDENTIFICATION_REFERENCE,
+                label    : 'Cabeçalho',
+                position : 10 }]
+
+  @UI.hidden: true
+  id;
+
+  @UI.hidden: true
+  paiid;
+
+  @UI.identification: [{ position: 10 }]
+  @UI.lineItem:       [{ position: 10 }]
+  @Consumption.valueHelpDefinition: [{ entity:{ name: 'ZI_TM_VH_TIPO', element: 'type' } }]
+  Tipo;
+
+  @UI.identification: [{ position: 20, criticality: 'NumeroCriticality', criticalityRepresentation: #WITHOUT_ICON }]
+  @UI.lineItem:       [{ position: 20, criticality: 'NumeroCriticality', criticalityRepresentation: #WITHOUT_ICON }]
+  Numero;
+
+  @UI.hidden: true
+  NumeroCriticality;
+
+  @UI.identification: [{ position: 30 }]
+  @UI.lineItem:       [{ position: 30 }]
+  ValidadeDesde;
+
+  @UI.identification: [{ position: 31 }]
+  @UI.lineItem:       [{ position: 31 }]
+  Validade;
+
+  @UI.identification: [{ position: 40 }]
+  @UI.lineItem:       [{ position: 40 }]
+  @Consumption.valueHelpDefinition: [{ entity:{ name: 'ZI_TM_VH_UF', element: 'Region' } }]
+  Uf;
+
+  @UI.identification: [{ position: 50 }]
+  @UI.lineItem:       [{ position: 50 }]
+  Descricao;
+
+}

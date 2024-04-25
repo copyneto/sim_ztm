@@ -1,0 +1,37 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_TM_SISPETRO //alias <alias_name>
+{
+
+  use action criar;
+
+  use association _loga;
+  use association _NotaFiscal;
+  use association _Compartimentos;
+  use association _Lacres;
+}
+
+define behavior for ZC_TM_SISPETRO_LOG_ALL //alias <alias_name>
+{
+
+  use association _pai;
+}
+
+define behavior for ZC_TM_SISPETRO_NOTA_FISCAL //alias <alias_name>
+{
+
+  use association _paiNotaFiscal;
+}
+
+define behavior for ZC_TM_ORDEM_CARREGAMENTO_COMP //alias <alias_name>
+{
+
+  use association _paiComp;
+}
+
+define behavior for ZC_TM_ORDEM_CARREG_LISTA_LACRE //alias <alias_name>
+{
+
+  use association _paiLacre;
+}

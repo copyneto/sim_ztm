@@ -1,0 +1,6 @@
+@EndUserText.label: 'Tipo de Compartimento'
+define service ZUI_TM_COMPARTMENT_TYPE {
+  expose ZC_TM_CT_TYPE;
+  expose ZC_TM_CT_CAPACITY;
+  expose ZC_TM_CT_STEP;
+}

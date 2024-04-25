@@ -1,0 +1,81 @@
+unmanaged implementation in class ZCLTM_SISPETRO unique;
+strict ( 2 );
+
+define behavior for ZI_TM_SISPETRO //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+//  create;
+//  update;
+//  delete;
+  association _loga {  }
+  association _NotaFiscal {  }
+  association _Compartimentos {  }
+  association _Lacres {  }
+//  association _torite { }
+  action( features : instance ) criar;
+
+
+}
+
+define behavior for ZI_TM_SISPETRO_LOG_ALL //alias <alias_name>
+//late numbering
+lock dependent by _pai
+authorization dependent by _pai
+//etag master <field_name>
+{
+//  update;
+//  delete;
+  field ( readonly ) id_processo;
+  association _pai;
+}
+
+define behavior for ZI_TM_SISPETRO_NOTA_FISCAL //alias <alias_name>
+//late numbering
+lock dependent by _paiNotaFiscal
+authorization dependent by _paiNotaFiscal
+//etag master <field_name>
+{
+//  update;
+//  delete;
+  field ( readonly ) parent_key, BR_NotaFiscal, docdat, base_btd_id, BR_NotaFiscalItem;
+  association _paiNotaFiscal;
+}
+
+define behavior for ZI_TM_ORDEM_CARREGAMENTO_COMP //alias <alias_name>
+//late numbering
+lock dependent by _paiComp
+authorization dependent by _paiComp
+//etag master <field_name>
+{
+//  update;
+//  delete;
+  field ( readonly ) db_key, parent_key, Orp_Id, zz_fu_db_key, ct_seq, gro_vol_uni, gro_vol_val, item_descr, zz_fu_max_util, envelope;
+  association _paiComp;
+}
+
+define behavior for ZI_TM_ORDEM_CARREG_LISTA_LACRE //alias <alias_name>
+//late numbering
+lock dependent by _paiLacre
+authorization dependent by _paiLacre
+//etag master <field_name>
+{
+//  update;
+//  delete;
+  field ( readonly ) db_key, root_key, seal_number;
+  association _paiLacre;
+}
+
+//define behavior for ZI_TM_TORITE //alias <alias_name>
+////late numbering
+//lock dependent by _pai
+//authorization dependent by _pai
+////etag master <field_name>
+//{
+////  update;
+////  delete;
+//  field ( readonly ) parent_key;
+//  association _pai;
+//}

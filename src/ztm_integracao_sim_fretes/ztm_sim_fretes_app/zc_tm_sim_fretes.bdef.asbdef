@@ -1,0 +1,24 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_TM_SIM_FRETES //alias <alias_name>
+{
+  use action cadastrar;
+  use action agrupar;
+  use action desagrupar;
+
+  use association _log;
+  use association _nfe;
+}
+
+define behavior for ZC_TM_SIM_FRETES_LOG //alias <alias_name>
+{
+
+  use association _pai;
+}
+
+define behavior for ZC_TM_SIM_FRETES_NFE //alias <alias_name>
+{
+
+  use association _pai;
+}

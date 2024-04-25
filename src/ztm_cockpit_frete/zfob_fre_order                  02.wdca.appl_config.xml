@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Name="/SCMTMS/FRE_ORDER" ConfId="ZFOB_FRE_ORDER" ConfType="02" ConfVar="">
+ <Parameters>
+  <Parameter Name="MODE">1</Parameter>
+  <Parameter Name="UNDO"/>
+  <Parameter Name="WDSIDEPANELCONFIGURATIONID">/BCV/SIDEPANEL</Parameter>
+ </Parameters>
+ <Component Name="FPM_OVP_COMPONENT" Usage="/SCMTMS/FRE_ORDER" ConfType="00" ConfId="/SCMTMS/WDCC_FRE_ORDER" ConfVar="" Interface="False"/>
+</Application>

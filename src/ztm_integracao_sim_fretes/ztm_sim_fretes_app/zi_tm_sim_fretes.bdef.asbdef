@@ -1,0 +1,46 @@
+unmanaged implementation in class zcltm_sim_fretes unique;
+strict ( 2 );
+
+define behavior for ZI_TM_SIM_FRETES //alias <alias_name>
+//late numbering
+implementation in class zcltm_sim_fretes unique
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+//  create;
+//  update;
+//  delete;
+  action ( features : instance ) cadastrar;
+  action ( features : instance ) agrupar parameter zi_tm_sim_fretes_agrup_popup;
+  action ( features : instance ) desagrupar;
+
+  association _log {  }
+  association _nfe {  }
+}
+
+define behavior for ZI_TM_SIM_FRETES_LOG //alias <alias_name>
+implementation in class zcltm_sim_fretes unique
+//late numbering
+lock dependent by _pai
+authorization dependent by _pai
+//etag master <field_name>
+{
+//  update;
+//  delete;
+  field ( readonly ) Processo, Message;
+  association _pai;
+}
+
+define behavior for ZI_TM_SIM_FRETES_NFE //alias <alias_name>
+implementation in class zcltm_sim_fretes unique
+//late numbering
+lock dependent by _pai
+authorization dependent by _pai
+//etag master <field_name>
+{
+//  update;
+//  delete;
+  field ( readonly ) CtcNumero, CtcSerie;
+  association _pai;
+}

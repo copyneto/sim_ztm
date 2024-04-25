@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>BADI_IMPL</TOOL>
+   <SHORTTEXT>Documento faturament de frete</SHORTTEXT>
+   <SPOT_NAME>WZRE_EXTERNAL_POSTING</SPOT_NAME>
+   <IMPL>
+    <ENH_BADI_IMPL_DATA>
+     <SPOT_NAME>WZRE_EXTERNAL_POSTING</SPOT_NAME>
+     <BADI_NAME>WZRE_DET_CONTR_FIELDS_BADI</BADI_NAME>
+     <IMPL_NAME>ZTMIM_BADI_SFIR</IMPL_NAME>
+     <IMPL_CLASS>ZTMCL_BADI_SFIR</IMPL_CLASS>
+     <ACTIVE>X</ACTIVE>
+     <IMPL_SHORTTEXT>Implementação: Determinar campos que controlam a criação do documento da administração de liquidações</IMPL_SHORTTEXT>
+     <IMPL_SHORTTEXT_ID>EB14A0E0572C1EDEBB8D840764DF7567</IMPL_SHORTTEXT_ID>
+     <SORTER_DATA>/wYCAQECgAA0MTAzAAAAAAEKAAAAAAEAAAA9CwAAAAAAAAAAAAAAAAAAAAAAAAAAUwBPAFIAVABF
+AFIAXwBEAEEAVABBALwAAAABA70E</SORTER_DATA>
+     <LOCKED_IN_CUSTOMIZING>X</LOCKED_IN_CUSTOMIZING>
+    </ENH_BADI_IMPL_DATA>
+   </IMPL>
+   <SOTR>
+    <item>
+     <HEADER>
+      <CONCEPT>EB14A0E0572C1EDEBB8D82276CA9F567</CONCEPT>
+      <CREA_LAN>P</CREA_LAN>
+      <TRALA_TYPE>1</TRALA_TYPE>
+      <OBJID_VEC>AAI=</OBJID_VEC>
+     </HEADER>
+     <ENTRIES>
+      <SOTR_TEXT>
+       <CONCEPT>EB14A0E0572C1EDEBB8D82276CA9F567</CONCEPT>
+       <LANGU>P</LANGU>
+       <LFD_NUM>0001</LFD_NUM>
+       <FLAG_CNTXT>X</FLAG_CNTXT>
+       <STATUS>R</STATUS>
+       <LENGTH>255</LENGTH>
+       <TEXT>Documento faturament de frete</TEXT>
+      </SOTR_TEXT>
+     </ENTRIES>
+    </item>
+    <item>
+     <HEADER>
+      <CONCEPT>EB14A0E0572C1EDEBB8D840764DF7567</CONCEPT>
+      <CREA_LAN>P</CREA_LAN>
+      <TRALA_TYPE>1</TRALA_TYPE>
+      <OBJID_VEC>AAI=</OBJID_VEC>
+     </HEADER>
+     <ENTRIES>
+      <SOTR_TEXT>
+       <CONCEPT>EB14A0E0572C1EDEBB8D840764DF7567</CONCEPT>
+       <LANGU>P</LANGU>
+       <LFD_NUM>0001</LFD_NUM>
+       <FLAG_CNTXT>X</FLAG_CNTXT>
+       <STATUS>R</STATUS>
+       <LENGTH>255</LENGTH>
+       <TEXT>Implementação: Determinar campos que controlam a criação do documento da administração de liquidações</TEXT>
+      </SOTR_TEXT>
+     </ENTRIES>
+    </item>
+   </SOTR>
+   <SOTR_USE>
+    <SOTR_USE>
+     <PGMID>R3TR</PGMID>
+     <OBJECT>ENHO</OBJECT>
+     <OBJ_NAME>ZEITM_BADI_SFIR</OBJ_NAME>
+     <CONCEPT>EB14A0E0572C1EDEBB8D82276CA9F567</CONCEPT>
+     <LFD_NUM>0001</LFD_NUM>
+    </SOTR_USE>
+    <SOTR_USE>
+     <PGMID>R3TR</PGMID>
+     <OBJECT>ENHO</OBJECT>
+     <OBJ_NAME>ZEITM_BADI_SFIR</OBJ_NAME>
+     <CONCEPT>EB14A0E0572C1EDEBB8D840764DF7567</CONCEPT>
+     <LFD_NUM>0001</LFD_NUM>
+    </SOTR_USE>
+   </SOTR_USE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

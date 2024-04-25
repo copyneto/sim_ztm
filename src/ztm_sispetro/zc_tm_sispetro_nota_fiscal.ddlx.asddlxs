@@ -1,0 +1,27 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: { typeName: 'Nota Fiscal',
+                     typeNamePlural: 'Notas Fiscais' } }
+annotate view ZC_TM_SISPETRO_NOTA_FISCAL with
+{
+  @UI.facet: [
+  {   id: 'HEADER',
+     type: #IDENTIFICATION_REFERENCE,
+     label: 'Notas Fiscais',
+     position: 10
+  }]
+  
+  @UI.hidden: true
+  parent_key;
+  @UI.identification: [ { position: 10 } ]
+  @UI.lineItem: [{ position: 10 }]
+  BR_NotaFiscal;
+  @UI.identification: [ { position: 20 } ]
+  @UI.lineItem: [{ position: 20 }]
+  docdat;
+  @UI.identification: [ { position: 30 } ]
+  @UI.lineItem: [{ position: 30 }]
+  base_btd_id;
+  @UI.identification: [ { position: 40 } ]
+  @UI.lineItem: [{ position: 40 }]
+  BR_NotaFiscalItem;
+}

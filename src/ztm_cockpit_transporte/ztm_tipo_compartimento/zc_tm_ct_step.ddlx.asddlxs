@@ -1,0 +1,38 @@
+@Metadata.layer: #CORE
+
+@UI.headerInfo.title: { type: #STANDARD, value: 'CompartmentType' }
+@UI.headerInfo.typeName: 'Nível'
+@UI.headerInfo.typeNamePlural: 'Níveis'
+@UI.presentationVariant: [{ sortOrder: [{ by: 'CompartmentType', direction:  #ASC },
+                                        { by: 'CompartmentUnit', direction:  #ASC },
+                                        { by: 'StepId', direction:  #ASC }] }]
+
+annotate view ZC_TM_CT_STEP with
+{
+  // ------------------------------------------------------
+  // Header information
+  // ------------------------------------------------------
+  @UI.facet: [ { id             : 'Step',
+                 purpose        : #STANDARD,
+                 type           : #IDENTIFICATION_REFERENCE,
+                 label          : 'Níveis',
+                 position       : 30 }
+  ]
+
+  // ------------------------------------------------------
+  // Field information
+  // ------------------------------------------------------
+
+  @UI.lineItem:        [{ position: 10 }]
+  @UI.identification:  [{ position: 10 }]
+  StepId;
+
+  @UI.lineItem:        [{ position: 20 }]
+  @UI.identification:  [{ position: 20 }]
+  CompartmentCapacity;
+
+  @UI.lineItem:        [{ position: 30 }]
+  @UI.identification:  [{ position: 30 }]
+  Flexible;
+
+}

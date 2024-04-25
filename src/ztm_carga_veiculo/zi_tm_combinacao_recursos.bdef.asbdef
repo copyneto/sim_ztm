@@ -1,0 +1,24 @@
+managed implementation in class zcltm_combinacao_recursos unique;
+strict ( 2 );
+
+define behavior for ZI_TM_COMBINACAO_RECURSOS alias _CombinacaoRec
+persistent table zttm_comb_recur
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  //  create;
+  //  update;
+  delete;
+  action processar;
+  field ( readonly ) combination_resource_id, SeqNum, EquiType, EquiCode, resource_id, LogMessage, LogType;
+
+  mapping for zttm_comb_recur
+  {
+    combination_resource_id = combination_resource_id;
+    SeqNum = seq_num;
+    EquiType = equi_type;
+    EquiCode = equi_code;
+    resource_id = resource_id;
+  }
+}

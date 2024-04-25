@@ -1,0 +1,6 @@
+@EndUserText.label: 'Service definition - Impressão de Romaneio'
+define service ZUI_TM_IMPRESSAO_DE_ROMANEIO {
+  expose ZC_TM_IMPRESSAO_DE_ROMANEIO;
+  expose ZI_TM_IMPRESSAO_DE_ROMANEIO_CE as PDF;
+  expose ZI_TM_VH_TRANSPORTADORA as Transportadora;
+}

@@ -1,0 +1,38 @@
+@Metadata.layer: #CORE
+annotate view ZC_TM_IMPRESSAO_DE_ROMANEIO
+    with 
+{   
+    @UI.lineItem: [{ position: 10 }, { type: #FOR_ACTION, dataAction: 'romaneio', label: 'romaneio',invocationGrouping: #CHANGE_SET}]
+    docnum;
+    @UI.lineItem: [{ position: 20 }]
+    Nota;
+    @UI.lineItem: [{ position: 30 }]
+    @UI.selectionField: [{ position: 10 }]
+    @Consumption.filter.selectionType: #INTERVAL  --  VH pra Data
+    Emissao;
+    @UI.lineItem: [{ position: 40 }]
+    VOL;
+    @UI.lineItem: [{ position: 50 }]
+    Pedido;
+    @UI.lineItem: [{ position: 60 }]
+    Peso;
+    @UI.lineItem: [{ position: 70 }]
+    Valor;
+    @UI.lineItem: [{ position: 80 }]
+    Cliente;
+    @UI.lineItem: [{ position: 90 }]
+    Cidade;
+    @UI.lineItem: [{ position: 100 }]
+    UF;
+    @UI.lineItem: [{ position: 110 }]
+    UnidadePeso;
+    @UI.lineItem: [{ position: 120 }]
+    vol_unit;
+    @UI.lineItem: [{ position: 130 }]
+    Moeda;
+    @UI.lineItem: [{ position: 140 }]
+    @UI.selectionField: [{ position: 20 }]
+    @Consumption.filter.mandatory: true -- Filtro Obrigatorio
+    @Consumption.filter.selectionType: #SINGLE
+    Transportadora;
+}

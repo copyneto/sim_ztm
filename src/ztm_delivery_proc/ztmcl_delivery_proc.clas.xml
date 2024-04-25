@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZTMCL_DELIVERY_PROC</CLSNAME>
+    <LANGU>P</LANGU>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>DETERMINA_COND_EXPEDICAO</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Determina condição</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>DETERMINA_COND_EXPEDICAO</CMPNAME>
+     <SCONAME>CS_LIKP</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Documento SD: fornecimento: dados de cabeçalho</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DETERMINA_COND_EXPEDICAO</CMPNAME>
+     <SCONAME>CS_LIPS</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Documento SD: fornecimento: dados de item</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DETERMINA_COND_EXPEDICAO</CMPNAME>
+     <SCONAME>IF_BSART_TM</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Tipo de pedido</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DETERMINA_COND_EXPEDICAO</CMPNAME>
+     <SCONAME>IF_MODFRETE</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Código de um caractere</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DETERMINA_COND_EXPEDICAO</CMPNAME>
+     <SCONAME>IF_TCODE</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Código de transação funcional no processamento fornecimento</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DETERMINA_COND_EXPEDICAO</CMPNAME>
+     <SCONAME>IF_TRTYP</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Tipo de transação</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DETERMINA_COND_EXPEDICAO</CMPNAME>
+     <SCONAME>IT_XLIKP</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Fornecimentos</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DETERMINA_COND_EXPEDICAO</CMPNAME>
+     <SCONAME>IT_XLIPS</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Item de remessa compatível c/versões seguintes</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DETERMINA_COND_EXPEDICAO</CMPNAME>
+     <SCONAME>IT_YLIKP</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Ctg.tabela para cabeçalhos fornecimento (com base em LIKP)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DETERMINA_COND_EXPEDICAO</CMPNAME>
+     <SCONAME>IT_YLIPS</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Item de remessa compatível c/versões seguintes</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

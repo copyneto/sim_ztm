@@ -1,0 +1,134 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: { typeName: 'Sim Frete',
+                     typeNamePlural: 'Sim Fretes' } }
+annotate view ZC_TM_SIM_FRETES with
+{
+  @UI.facet: [
+   {   id: 'HEADER',
+      isSummary: true,
+      type: #IDENTIFICATION_REFERENCE,
+      label: 'Cabeçalho',
+      position: 10
+   },
+   {
+      purpose: #STANDARD,
+      type: #LINEITEM_REFERENCE,
+      position: 20,
+      label: 'NFE',
+      targetElement: '_nfe'
+   },
+   {
+      purpose: #STANDARD,
+      type: #LINEITEM_REFERENCE,
+      position: 30,
+      label: 'Log',
+      targetElement: '_log'
+   } ]
+  @UI.lineItem: [ { position: 10 },
+                  { type: #FOR_ACTION, dataAction: 'cadastrar', label: 'Cadastrar'} ]
+  @UI.identification: [ { position: 10 }, 
+                        {type: #FOR_ACTION, dataAction: 'cadastrar', label: 'Cadastrar' } ]
+  @UI.selectionField: [{position: 10 }]
+  CtcNumero;
+  
+  @UI.selectionField: [{position: 20 }]
+  @UI.lineItem: [{ position: 20 }, 
+                  { type: #FOR_ACTION, dataAction: 'agrupar', label: 'Agrupar Fatura'} ]
+  @UI.identification: [ { position: 20 },
+                  { type: #FOR_ACTION, dataAction: 'agrupar', label: 'Agrupar Fatura'}  ]
+  CtcSerie;
+  @UI.lineItem: [{ position: 30 }, 
+                  { type: #FOR_ACTION, dataAction: 'desagrupar', label: 'Desagrupar Fatura'} ]
+  @UI.identification: [ { position: 30 }, 
+                  { type: #FOR_ACTION, dataAction: 'desagrupar', label: 'Desagrupar Fatura'}  ]
+  @UI.selectionField: [{position: 30 }]
+  CtcEmissao;
+  @UI.lineItem: [{ position: 40 }]
+  @UI.identification: [ { position: 40 } ]
+  @UI.selectionField: [{position: 40 }]
+  CtcValor;
+  @UI.lineItem: [{ position: 50 }]
+  @UI.identification: [ { position: 50 } ]
+  @UI.selectionField: [{position: 50 }]
+  CtcChave;
+  @UI.lineItem: [{ position: 51, label: 'Documento Contábil de compensação' }]
+  @UI.identification: [ { position: 51, label: 'Documento Contábil de compensação' } ]
+  @UI.selectionField: [{position: 51 }]
+  docContabilComp;
+  @UI.lineItem: [{ position: 60 }]
+  TotalCalculado;
+  @UI.lineItem: [{ position: 70 }]
+  TotalAprovado;
+  @UI.lineItem: [{ position: 80 }]
+  BaseIcms;
+  @UI.lineItem: [{ position: 90 }]
+  AliquotaIcms;
+  @UI.lineItem: [{ position: 100 }]
+  ValorIcms;
+  @UI.lineItem: [{ position: 110 }]
+  CstIcms;
+  @UI.lineItem: [{ position: 120 }]
+  TipoFrete;
+  @UI.lineItem: [{ position: 130 }]
+  Modal;
+  @UI.lineItem: [{ position: 140 }]
+  TipoOperacao;
+  @UI.lineItem: [{ position: 150 }]
+  Observacoes;
+  @UI.lineItem: [{ position: 160 }]
+  FornecedorCnpj;
+  @UI.lineItem: [{ position: 170 }]
+  FornecedorNome;
+  @UI.lineItem: [{ position: 180 }]
+  FornecedorIe;
+  @UI.lineItem: [{ position: 190 }]
+  RemetenteCnpj;
+  @UI.lineItem: [{ position: 200 }]
+  RemetenteNome;
+  @UI.lineItem: [{ position: 210 }]
+  DestinatarioCnpj;
+  @UI.lineItem: [{ position: 220 }]
+  DestinatarioNome;
+  @UI.lineItem: [{ position: 230 }]
+  RecebedorCnpj;
+  @UI.lineItem: [{ position: 240 }]
+  RecebedorNome;
+  @UI.lineItem: [{ position: 250 }]
+  OrigemLocalidade;
+  @UI.lineItem: [{ position: 260 }]
+  OrigemUf;
+  @UI.lineItem: [{ position: 270 }]
+  OrigemIbge;
+  @UI.lineItem: [{ position: 280 }]
+  DestinoLocalidade;
+  @UI.lineItem: [{ position: 290 }]
+  DestinoUf;
+  @UI.lineItem: [{ position: 300 }]
+  DestinoIbge;
+  @UI.lineItem: [{ position: 310 }]
+  CodigoImpostoErp;
+  @UI.lineItem: [{ position: 320 }]
+  DocumentoTransporteSituacao;
+  @UI.lineItem: [{ position: 330 }]
+  DataHoraSituacao;
+  @UI.lineItem: [{ position: 340 }]
+  FreteEspecial;
+  @UI.lineItem: [{ position: 350 }]
+  Cfop;
+  @UI.lineItem: [{ position: 360 }]
+  CfopOriginal;
+  @UI.lineItem: [{ position: 370 }]
+  ChaveCteOrigem;
+  @UI.lineItem: [{ position: 380 }]
+  Xml;
+  @UI.lineItem: [{ position: 390 }]
+  CreatedBy;
+  @UI.lineItem: [{ position: 400 }]
+  CreatedAt;
+  @UI.lineItem: [{ position: 410 }]
+  LastChangedBy;
+  @UI.lineItem: [{ position: 420 }]
+  LastChangedAt;
+  @UI.lineItem: [{ position: 430 }]
+  LocalLastChangedAt;
+}

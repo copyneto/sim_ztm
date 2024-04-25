@@ -1,0 +1,72 @@
+@Metadata.layer: #CORE
+@UI: {
+    headerInfo: {
+        typeName: 'Perfil de Compartimento',
+        typeNamePlural: 'Perfis de Compartimento'
+    },
+    presentationVariant: [{
+        sortOrder: [{
+            by: 'Cmprofile',
+            direction: #ASC
+        }],
+        visualizations: [{
+            type: #AS_LINEITEM
+        }]
+    }]
+}
+
+@UI.lineItem: [{criticality: 'CTypeCriticality'}]
+
+annotate view ZC_TM_PERFIL_DE_COMPARTIMENTO
+    with 
+{
+    @UI.facet: [
+                   {  
+                      id: 'Header1',
+                      purpose: #HEADER,
+                      type: #DATAPOINT_REFERENCE,
+                      position: 10,
+                      targetQualifier: 'head'
+                   },
+                   { 
+                     id:             'DADOS',
+                     isSummary:       true,
+                     type:            #COLLECTION,
+                     label:           'Perfil de Compartimento',
+                     position:        20 },
+
+                        { parentId:        'DADOS',
+                          id:              'DADOS_PRINCIPAIS',
+                          type:            #FIELDGROUP_REFERENCE,
+                          position:        10,
+                          label: 'Dados principais',
+                          targetQualifier: 'DADOS_PRINCIPAIS' }
+                     ]
+ 
+    @UI.lineItem: [{ position: 10 }]
+    @UI.fieldGroup: [{ position: 10, qualifier: 'DADOS_PRINCIPAIS' }]
+    @UI.selectionField: [{ position: 10 }]
+    @UI.dataPoint: { qualifier: 'head', title: 'Perfil de Compartimento:' }
+    Cmprofile;
+    
+    @UI.lineItem: [{ position: 20 }]
+    @UI.fieldGroup: [{ position: 20, qualifier: 'DADOS_PRINCIPAIS' }]
+    Sequence;
+    
+    @UI.lineItem: [{ position: 30, criticality: 'CTypeCriticality', criticalityRepresentation: #WITHOUT_ICON }]
+    @UI.fieldGroup: [{ position: 30, qualifier: 'DADOS_PRINCIPAIS', criticality: 'CTypeCriticality', criticalityRepresentation: #WITHOUT_ICON }]
+    @UI.selectionField: [{ position: 30 }]
+    CType;
+    
+    @UI.hidden: true
+    CTypeCriticality;
+    
+//  @UI.lineItem: [{ position: 40 }]
+//  @UI.fieldGroup: [{ position: 40, qualifier: 'DADOS_PRINCIPAIS' }]
+    @UI.hidden: true
+    Text;
+    
+    @UI.lineItem: [{ position: 60 }]
+    @UI.fieldGroup: [{ position: 60, qualifier: 'DADOS_PRINCIPAIS' }]
+    ZzSealNumberTotal;
+}

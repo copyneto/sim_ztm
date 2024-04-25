@@ -1,0 +1,62 @@
+@Metadata.layer: #CORE
+@UI: {
+    headerInfo: {
+        typeName: 'Combinação Recurso',
+        typeNamePlural: 'Combinações Recursos'
+    },
+    presentationVariant: [{
+        sortOrder: [{
+            by: 'combination_resource_id',
+            direction: #ASC
+        }],
+        visualizations: [{
+            type: #AS_LINEITEM
+        }]
+    }]
+}
+annotate view ZC_TM_COMBINACAO_RECURSOS with
+{
+  @UI.facet: [
+  {   id: 'HEADER',
+     isSummary: true,
+     purpose: #STANDARD,
+     type: #IDENTIFICATION_REFERENCE,
+     //label: 'Cabeçalho',
+     position: 10
+  }
+  ]
+
+  @UI: { lineItem:       [{ position: 10 }],
+         identification: [{ position: 10 }],
+         selectionField: [{ position: 10 }] }
+  combination_resource_id;
+  @UI: { lineItem:       [{ position: 20 }],
+         identification: [{ position: 20 }],
+         selectionField: [{ position: 20 }] }
+  SeqNum;
+  @UI: { lineItem:       [{ position: 30 }],
+         identification: [{ position: 30 }],
+         selectionField: [{ position: 30 }] }
+  EquiType;
+  @UI: { lineItem:       [{ position: 40 }],
+         identification: [{ position: 40 }],
+         selectionField: [{ position: 40 }] }
+  EquiCode;
+  @UI: { lineItem:       [{ position: 50 }],
+         identification: [{ position: 50 }],
+         selectionField: [{ position: 50 }] }
+  resource_id;
+  @UI: { lineItem:       [{ position: 60 }],
+         identification: [{ position: 60 }],
+         selectionField: [{ position: 60 }] }  
+  LogMessage;
+  @UI: { lineItem:       [{ position: 70 }],
+         identification: [{ position: 70 }],
+         selectionField: [{ position: 70 }] }  
+  LogType;
+    @UI.identification: [{ type: #FOR_ACTION, dataAction: 'processar', label: 'Processar', invocationGrouping: #CHANGE_SET } ]
+  @UI.lineItem:       [{ type: #FOR_ACTION,  dataAction: 'processar', label: 'Processar', invocationGrouping: #CHANGE_SET } ]  
+  Botao;
+  
+
+}

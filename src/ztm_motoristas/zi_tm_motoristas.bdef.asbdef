@@ -1,0 +1,97 @@
+unmanaged implementation in class zcltm_motoristas unique;
+strict ( 2 );
+//with draft;
+
+define behavior for ZI_TM_MOTORISTAS
+//implementation in class zcltm_motoristas unique
+//persistent table zttm_motoristas
+//draft table zttm_motoristasd
+lock master
+//total etag LocalLastChangedAt
+authorization master ( instance )
+etag master LocalLastChangedAt
+//early numbering
+{
+  association _filho { create; }
+
+  create;
+  update ( features : instance );
+  delete ( features : instance );
+
+  action ( features : instance ) cadastrar;
+  action ( features : instance ) adicionar parameter ZI_TM_POPUP_DOC_ADD;
+
+  //  draft action Edit;
+  //  draft action Discard;
+  //  draft action Resume;
+  //  draft determine action Prepare;
+  //  draft action Activate;
+
+  //  field ( readonly, numbering : managed ) id;
+  field ( readonly ) id;
+  field ( readonly ) bp, status;
+  field ( readonly : update ) BusinessPartnerRedeSim;
+  field ( features : instance ) Nome, Cpf;
+
+  //  mapping for zttm_motoristas
+  //  {
+  //    id = id;
+  //    Cpf = cpf;
+  //    Nome = nome;
+  //    Rg = Rg;
+  //    Cnh = cnh;
+  //    Validadecnh = validadecnh;
+  //    Categoriacnh = categoriacnh;
+  //    bp = bp;
+  //    status = status;
+  //    CreatedBy = created_by;
+  //    CreatedAt = created_at;
+  //    LastChangedBy = last_changed_by;
+  //    LastChangedAt = last_changed_at;
+  //    LocalLastChangedAt = local_last_changed_at;
+  //  }
+
+}
+
+define behavior for ZI_TM_DOC_ADD
+//implementation in class zcltm_doc_add unique
+//persistent table zttm_doc_add
+//draft table zttm_doc_addd
+lock dependent by _pai
+authorization dependent by _pai
+etag master LocalLastChangedAt
+//early numbering
+{
+  association _pai { }
+
+  //  create;
+  update ( features : instance );
+  delete ( features : instance );
+
+  //  action ( features : instance ) deletar;
+
+  field ( readonly ) id;
+  //  field ( readonly, numbering : managed ) paiid;
+  field ( readonly ) paiid;
+  field ( mandatory, features : instance ) Tipo, Numero;
+
+  //  validation check_keys on save { create; update; }
+
+  //  mapping for zttm_doc_add
+  //  {
+  //    id = id;
+  //    paiid = paiid;
+  //    Tipo = tipo;
+  //    Numero = numero;
+  //    ValidadeDesde = validadedesde;
+  //    Validade = validade;
+  //    Uf = uf;
+  //    Descricao = descricao;
+  //    CreatedBy = created_by;
+  //    CreatedAt = created_at;
+  //    LastChangedBy = last_changed_by;
+  //    LastChangedAt = last_changed_at;
+  //    LocalLastChangedAt = local_last_changed_at;
+  //  }
+
+}

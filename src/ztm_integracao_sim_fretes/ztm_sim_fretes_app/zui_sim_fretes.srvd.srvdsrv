@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition - Sim Fretes'
+define service ZUI_SIM_FRETES {
+  expose ZC_TM_SIM_FRETES;
+}

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCLTM_MODIFY_PO_IVA_DET</CLSNAME>
+    <LANGU>P</LANGU>
+    <DESCRIPT>Determinação de IVA no pedido de frete</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>DET_IVA</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Determinação de IVA no pedido de frete</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_CENARIO</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Busca o cenário</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_CENARIO_2</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Busca o cenário</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_IVA</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Seleciona IVA</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>DET_IVA</CMPNAME>
+     <SCONAME>CT_PO_ITEMS</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Tipo de tabela para BAPIMEPOITEM</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DET_IVA</CMPNAME>
+     <SCONAME>CT_PO_ITEMSX</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Tipo de tabela para BAPIMEPOITEMX</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DET_IVA</CMPNAME>
+     <SCONAME>CT_PO_SERVICES</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Tipo de tabela para BAPIESLLC</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DET_IVA</CMPNAME>
+     <SCONAME>IT_ITEM_TR</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Transportation Order Item</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DET_IVA</CMPNAME>
+     <SCONAME>IT_TOR_ROOT</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Root Node</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_CENARIO</CMPNAME>
+     <SCONAME>CT_CENARIO</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Cenário</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_CENARIO</CMPNAME>
+     <SCONAME>IT_ITEM_TR</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Transportation Order Item</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_CENARIO_2</CMPNAME>
+     <SCONAME>CT_CENARIO</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Cenário</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_CENARIO_2</CMPNAME>
+     <SCONAME>IS_ROOT</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Transportation Order Item</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

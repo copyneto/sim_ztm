@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Def. - Carga de combinações de veículos em massa'
+define service ZUI_TM_COMBINACAO_RECURSOS {
+  expose ZC_TM_COMBINACAO_RECURSOS;
+}

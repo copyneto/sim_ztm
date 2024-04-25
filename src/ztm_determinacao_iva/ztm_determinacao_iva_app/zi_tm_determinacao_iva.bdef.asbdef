@@ -1,0 +1,14 @@
+managed implementation in class zcltm_bp_determinacao_iva unique;
+strict ( 2 );
+
+define behavior for ZI_TM_DETERMINACAO_IVA alias _determinacao
+persistent table zttm_determ_iva
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( mandatory : create )  iva, Cenario, Uforigem, Ufdestino, Uftransp;
+}

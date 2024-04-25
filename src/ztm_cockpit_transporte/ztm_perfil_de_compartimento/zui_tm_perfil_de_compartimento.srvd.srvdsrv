@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition-Perfil Compartimento'
+define service ZUI_TM_PERFIL_DE_COMPARTIMENTO {
+  expose ZC_TM_PERFIL_DE_COMPARTIMENTO as PerfilCompartimento;
+}

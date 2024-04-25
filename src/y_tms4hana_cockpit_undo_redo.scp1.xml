@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SCP1" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SCP1>
+    <SCPRATTR>
+     <ID>Y_TMS4HANA_COCKPIT_UNDO_REDO</ID>
+     <TYPE>TMV</TYPE>
+     <ORGID>/CUSTOMER/</ORGID>
+     <COMPONENT>S4CORE</COMPONENT>
+     <MINRELEASE>102</MINRELEASE>
+     <MAXRELEASE>*</MAXRELEASE>
+    </SCPRATTR>
+    <SCPRTEXT>
+     <SCPRTEXT>
+      <LANGU>P</LANGU>
+      <ID>Y_TMS4HANA_COCKPIT_UNDO_REDO</ID>
+      <VERSION>N</VERSION>
+      <TEXT>TMS4HANA Define max. Number of Undo and Redo Actions</TEXT>
+     </SCPRTEXT>
+     <SCPRTEXT>
+      <LANGU>E</LANGU>
+      <ID>Y_TMS4HANA_COCKPIT_UNDO_REDO</ID>
+      <VERSION>N</VERSION>
+      <TEXT>TMS4HANA Define max. Number of Undo and Redo Actions</TEXT>
+     </SCPRTEXT>
+    </SCPRTEXT>
+    <SCPRVALS>
+     <SCPRVALS>
+      <ID>Y_TMS4HANA_COCKPIT_UNDO_REDO</ID>
+      <VERSION>N</VERSION>
+      <TABLENAME>/SCMTMS/V_UNDOST</TABLENAME>
+      <RECNUMBER>1</RECNUMBER>
+      <FIELDNAME>APPLICATION_NAME</FIELDNAME>
+      <FLAG>FKY</FLAG>
+      <VALUE>/SCMTMS/PLN</VALUE>
+     </SCPRVALS>
+     <SCPRVALS>
+      <ID>Y_TMS4HANA_COCKPIT_UNDO_REDO</ID>
+      <VERSION>N</VERSION>
+      <TABLENAME>/SCMTMS/V_UNDOST</TABLENAME>
+      <RECNUMBER>1</RECNUMBER>
+      <FIELDNAME>MANDT</FIELDNAME>
+      <FLAG>FKY</FLAG>
+      <VALUE>271</VALUE>
+     </SCPRVALS>
+     <SCPRVALS>
+      <ID>Y_TMS4HANA_COCKPIT_UNDO_REDO</ID>
+      <VERSION>N</VERSION>
+      <TABLENAME>/SCMTMS/V_UNDOST</TABLENAME>
+      <RECNUMBER>1</RECNUMBER>
+      <FIELDNAME>STEPS</FIELDNAME>
+      <FLAG>USE</FLAG>
+      <VALUE>  3</VALUE>
+     </SCPRVALS>
+    </SCPRVALS>
+    <SCPRRECA>
+     <SCPRRECA>
+      <ID>Y_TMS4HANA_COCKPIT_UNDO_REDO</ID>
+      <VERSION>N</VERSION>
+      <TABLENAME>/SCMTMS/V_UNDOST</TABLENAME>
+      <RECNUMBER>1</RECNUMBER>
+      <OBJECTNAME>/SCMTMS/V_UNDOST</OBJECTNAME>
+      <OBJECTTYPE>V</OBJECTTYPE>
+      <ACTIVITY>/SCMTMS/V_UNDOSTV</ACTIVITY>
+     </SCPRRECA>
+    </SCPRRECA>
+   </SCP1>
+  </asx:values>
+ </asx:abap>
+</abapGit>

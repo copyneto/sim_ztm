@@ -1,0 +1,26 @@
+managed implementation in class zcltm_perfil_compartimen unique;
+strict ( 2 );
+
+define behavior for ZI_TM_PERFIL_DE_COMPARTIMENTO alias Perfil
+persistent table /sapapo/cmprf
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) CTCapa, CTUnit;
+  field ( mandatory ) Cmprofile, Sequence, ctype, ZzSealNumberTotal;
+
+  validation validateFields  on save { field Cmprofile, Sequence, CType, Text, ZzSealNumberTotal; create; }
+
+  mapping for /sapapo/cmprf{
+     Cmprofile         =  cmprofile;
+     Sequence          =  sequence;
+     CType             =  ctype;
+     Text              =  text;
+     ZzSealNumberTotal =  zz_seal_number_total;
+  }
+
+}

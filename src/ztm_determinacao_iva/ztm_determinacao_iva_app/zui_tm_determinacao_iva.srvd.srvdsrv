@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Def Determinação IVA'
+define service ZUI_TM_DETERMINACAO_IVA {
+  expose ZC_TM_DETERMINACAO_IVA;
+}

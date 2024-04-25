@@ -1,0 +1,141 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: { typeName: 'Motorista',
+                     typeNamePlural: 'Motoristas' },
+       presentationVariant: [{ sortOrder: [{ by: 'bp', direction:  #DESC }] }] }
+
+@UI.lineItem: [{criticality: 'bpCriticality'}]
+
+@UI.headerInfo.typeImageUrl: 'sap-icon://customer'
+
+annotate view ZC_TM_MOTORISTAS with
+{
+  @UI.facet: [ { id:              'HeaderBp',
+                 purpose:         #HEADER,
+                 type:            #DATAPOINT_REFERENCE,
+                 targetQualifier: 'HeaderBp',
+                 position:        10 },
+
+               { id:              'HeaderNome',
+                 purpose:         #HEADER,
+                 type:            #DATAPOINT_REFERENCE,
+                 targetQualifier: 'HeaderNome',
+                 position:        20 },
+
+               { id            : 'HEADER',
+                 type          : #IDENTIFICATION_REFERENCE,
+                 label         : 'Cabeçalho',
+                 position      : 10 },
+
+               { purpose       : #STANDARD,
+                 type          : #LINEITEM_REFERENCE,
+                 position      : 10,
+                 label         : 'Documentos Adicionais',
+                 targetElement : '_filho' }]
+
+
+  @UI.identification: [{ position: 10, type: #FOR_ACTION, dataAction: 'cadastrar', label: 'Sincronizar' },
+                       { position: 20, type: #FOR_ACTION, dataAction: 'adicionar', label: 'Adicionar' }]
+  @UI.lineItem:       [{ position: 10, type: #FOR_ACTION, dataAction: 'cadastrar', label: 'Sincronizar' },
+                       { position: 20, type: #FOR_ACTION, dataAction: 'adicionar', label: 'Adicionar' }]
+  @UI.hidden: true
+  id;
+
+  @UI.identification: [{ position: 01, criticality: 'BusinessPartnerRedeSimCrit', criticalityRepresentation: #WITHOUT_ICON }]
+  @UI.lineItem:       [{ position: 01, criticality: 'BusinessPartnerRedeSimCrit', criticalityRepresentation: #WITHOUT_ICON }]
+  @UI.selectionField: [{ position: 01 }]
+  @Consumption.filter.selectionType: #SINGLE
+  BusinessPartnerRedeSim;
+  
+  @UI.hidden: true
+  BusinessPartnerRedeSimCrit;
+
+  //  BusinessPartnerGrouping;
+
+  @UI.hidden: true
+  BusinessPartnerGroupingText;
+
+  @Consumption.valueHelpDefinition: [{ entity: {name: 'ZI_TM_VH_MOTO_CPF', element: 'Cpf' },
+                                     qualifier: 'ZI_TM_VH_MOTO_CPF', useForValidation: true  }]
+
+  @UI.identification: [{ position: 40, criticality: 'CpfCriticality', criticalityRepresentation: #WITHOUT_ICON }]
+  @UI.lineItem:       [{ position: 40, criticality: 'CpfCriticality', criticalityRepresentation: #WITHOUT_ICON }]
+  @UI.selectionField: [{ position: 40 }]
+
+  Cpf;
+
+  @UI.hidden: true
+  CpfCriticality;
+
+  @Consumption.valueHelpDefinition: [{ entity: {name: 'ZI_TM_VH_MOTO_NOME', element: 'Nome' },
+                                     qualifier: 'ZI_TM_VH_MOTO_NOME', useForValidation: true  }]
+
+  @UI.identification: [{ position: 20 }]
+  @UI.lineItem:       [{ position: 20 }]
+  @UI.selectionField: [{ position: 20 }]
+  @UI.dataPoint:       { qualifier: 'HeaderNome' }
+
+  Nome;
+
+  @Consumption.valueHelpDefinition: [{ entity: {name: 'ZI_TM_VH_MOTO_RG', element: 'Rg' },
+                                     qualifier: 'ZI_TM_VH_MOTO_RG', useForValidation: true  }]
+
+  @UI.identification: [{ position: 30, criticality: 'RgCriticality', criticalityRepresentation: #WITHOUT_ICON }]
+  @UI.lineItem:       [{ position: 30, criticality: 'RgCriticality', criticalityRepresentation: #WITHOUT_ICON }]
+  @UI.selectionField: [{ position: 30 }]
+  Rg;
+
+  @UI.hidden: true
+  RgCriticality;
+
+  @Consumption.valueHelpDefinition: [{ entity: {name: 'ZI_TM_VH_MOTO_CNH', element: 'Cnh' },
+                                     qualifier: 'ZI_TM_VH_MOTO_CNH', useForValidation: true  }]
+
+  @UI.identification: [{ position: 50, criticality: 'CnhCriticality', criticalityRepresentation: #WITHOUT_ICON }]
+  @UI.lineItem:       [{ position: 50, criticality: 'CnhCriticality', criticalityRepresentation: #WITHOUT_ICON }]
+  @UI.selectionField: [{ position: 50 }]
+  Cnh;
+
+  @UI.hidden: true
+  CnhCriticality;
+
+  @UI.identification: [{ position: 60, criticality: 'ValidadecnhCriticality' }]
+  @UI.lineItem:       [{ position: 60, criticality: 'ValidadecnhCriticality' }]
+  @UI.selectionField: [{ position: 60 }]
+  @Consumption.filter.selectionType: #INTERVAL
+  Validadecnh;
+
+  @UI.hidden: true
+  ValidadecnhCriticality;
+
+  @Consumption.valueHelpDefinition: [{ entity: {name: 'ZI_TM_VH_MOTO_CATEGORIA_CNH', element: 'Categoriacnh' },
+                                     qualifier: 'ZI_TM_VH_MOTO_CATEGORIA_CNH', useForValidation: true  }]
+
+  @UI.identification: [{ position: 70 }]
+  @UI.lineItem:       [{ position: 70 }]
+  @UI.selectionField: [{ position: 70 }]
+  Categoriacnh;
+
+  @Consumption.valueHelpDefinition: [{ entity: {name: 'ZI_TM_VH_MOTO_STATUS', element: 'status' },
+                                     qualifier: 'ZI_TM_VH_MOTO_STATUS', useForValidation: true  }]
+
+  @UI.identification: [{ position: 80 }]
+  @UI.lineItem:       [{ position: 80 }]
+  status;
+
+  @Consumption.valueHelpDefinition: [{ entity: {name: 'ZI_TM_VH_MOTO_BP', element: 'bp' },
+                                     qualifier: 'ZI_TM_VH_MOTO_BP', useForValidation: true  }]
+
+  @UI.identification: [{ position: 10, criticality: 'bpCriticality', criticalityRepresentation: #WITHOUT_ICON }]
+  @UI.lineItem:       [{ position: 10, criticality: 'bpCriticality', criticalityRepresentation: #WITHOUT_ICON }]
+  @UI.selectionField: [{ position: 03 }]
+  @UI.dataPoint:       { qualifier: 'HeaderBp', criticality: 'bpCriticality' }
+  bp;
+
+  @UI.hidden: true
+  bpCriticality;
+
+  @Consumption.valueHelpDefinition: [{ entity: {name: 'ZI_TM_VH_STATUS_REPLICACAO', element: 'Status' }}]
+  @UI.selectionField: [{ position: 02 }]
+  StatusReplicacao;
+
+}

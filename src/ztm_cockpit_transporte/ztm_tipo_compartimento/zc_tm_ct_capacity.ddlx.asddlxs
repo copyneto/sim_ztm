@@ -1,0 +1,44 @@
+@Metadata.layer: #CORE
+
+@UI.headerInfo.title: { type: #STANDARD, value: 'CompartmentType' }
+@UI.headerInfo.typeName: 'Capacidade'
+@UI.headerInfo.typeNamePlural: 'Capacidades'
+@UI.presentationVariant: [{ sortOrder: [{ by: 'CompartmentType', direction:  #ASC },
+                                        { by: 'CompartmentUnit', direction:  #ASC }] }]
+
+annotate view ZC_TM_CT_CAPACITY with
+{
+  // ------------------------------------------------------
+  // Header information
+  // ------------------------------------------------------
+  @UI.facet: [ { id             : 'Tipo',
+                 purpose        : #STANDARD,
+                 type           : #IDENTIFICATION_REFERENCE,
+                 label          : 'Tipo',
+                 position       : 10,
+                 targetElement  : '_Type' },
+
+               { id             : 'Capacity',
+                 purpose        : #STANDARD,
+                 type           : #IDENTIFICATION_REFERENCE,
+                 label          : 'Capacidades',
+                 position       : 20 },
+
+               { id             : 'Step',
+                 purpose        : #STANDARD,
+                 type           : #LINEITEM_REFERENCE,
+                 label          : 'Níveis',
+                 position       : 30,
+                 targetElement  : '_Step' }
+  ]
+
+  // ------------------------------------------------------
+  // Field information
+  // ------------------------------------------------------
+
+  @UI.lineItem:        [{ position: 10 }]
+  @UI.identification:  [{ position: 10 }]
+  
+  CompartmentCapacity;
+
+}

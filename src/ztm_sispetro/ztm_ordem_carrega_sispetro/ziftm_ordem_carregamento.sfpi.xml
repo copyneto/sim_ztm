@@ -1,0 +1,611 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>P</LANGUAGE>
+     <ID/>
+     <TEXT>Formulário de ordem de carregamento</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>IS_ORDEM_CARREGAMENTO-ITENS-GRO_VOL_VAL</VALUE>
+       <UNIT>IS_ORDEM_CARREGAMENTO-ITENS-GRO_VOL_UNI</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>IS_ORDEM_CARREGAMENTO-VOLUME</VALUE>
+       <UNIT>IS_ORDEM_CARREGAMENTO-UNIT_VOLUME</UNIT>
+      </SFPREF>
+     </REFERENCE_FIELDS>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>GT_HEADER_COMPARTIMENTOS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_HEADER_COMPARTIMENTOS</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_VOLUME</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>/SCMTMS/QUA_GRO_VOL_VAL</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_HORA_EMISSAO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_DATA_EMISSAO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TOT1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR7</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TOT2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR7</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TOT3</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR7</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TOT4</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR7</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TOT5</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR7</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TOT6</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR7</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TOT7</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR7</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TOT8</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR7</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_PROD1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>/SCMTMS/ITEM_DESCRIPTION</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_PROD2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>/SCMTMS/ITEM_DESCRIPTION</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_PROD3</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>/SCMTMS/ITEM_DESCRIPTION</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_PROD4</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>/SCMTMS/ITEM_DESCRIPTION</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_PROD5</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>/SCMTMS/ITEM_DESCRIPTION</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_PROD6</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>/SCMTMS/ITEM_DESCRIPTION</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_PROD7</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>/SCMTMS/ITEM_DESCRIPTION</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GT_COMPARTIMENTOS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_COMPARTIMENTOS</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_PROD8</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>/SCMTMS/ITEM_DESCRIPTION</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_XSTRING</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES>
+      <FPCLINE>TYPES: BEGIN OF ty_compartimentos,</FPCLINE>
+      <FPCLINE>         compartimento TYPE /scmtms/res_cp_seq,</FPCLINE>
+      <FPCLINE>         volume1       TYPE char40,</FPCLINE>
+      <FPCLINE>         volume2       TYPE char40,</FPCLINE>
+      <FPCLINE>         volume3       TYPE char40,</FPCLINE>
+      <FPCLINE>         volume4       TYPE char40,</FPCLINE>
+      <FPCLINE>         volume5       TYPE char40,</FPCLINE>
+      <FPCLINE>         volume6       TYPE char40,</FPCLINE>
+      <FPCLINE>         volume7       TYPE char40,</FPCLINE>
+      <FPCLINE>         volume8       TYPE char40,</FPCLINE>
+      <FPCLINE>       END OF ty_compartimentos,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>       BEGIN OF ty_header_compartimentos,</FPCLINE>
+      <FPCLINE>         tanque_label TYPE char6,</FPCLINE>
+      <FPCLINE>         volume1      TYPE /SCMTMS/ITEM_DESCRIPTION,</FPCLINE>
+      <FPCLINE>         volume2      TYPE /SCMTMS/ITEM_DESCRIPTION,</FPCLINE>
+      <FPCLINE>         volume3      TYPE /SCMTMS/ITEM_DESCRIPTION,</FPCLINE>
+      <FPCLINE>         volume4      TYPE /SCMTMS/ITEM_DESCRIPTION,</FPCLINE>
+      <FPCLINE>         volume5      TYPE /SCMTMS/ITEM_DESCRIPTION,</FPCLINE>
+      <FPCLINE>         volume6      TYPE /SCMTMS/ITEM_DESCRIPTION,</FPCLINE>
+      <FPCLINE>         volume7      TYPE /SCMTMS/ITEM_DESCRIPTION,</FPCLINE>
+      <FPCLINE>         volume8      TYPE /SCMTMS/ITEM_DESCRIPTION,</FPCLINE>
+      <FPCLINE>       END OF ty_header_compartimentos,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>       tt_compartimentos TYPE TABLE OF ty_compartimentos,</FPCLINE>
+      <FPCLINE>       tt_header_compartimentos type TABLE OF ty_header_compartimentos.</FPCLINE>
+     </TYPES>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>IS_ORDEM_CARREGAMENTO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZSTM_ORDEM_CARREGAMENTO</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPPARAMETER>IS_ORDEM_CARREGAMENTO</FPPARAMETER>
+      <FPPARAMETER>IS_ORDEM_CARREGAMENTO-ITENS</FPPARAMETER>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS>
+      <FPPARAMETER>GT_HEADER_COMPARTIMENTOS</FPPARAMETER>
+      <FPPARAMETER>GV_VOLUME</FPPARAMETER>
+      <FPPARAMETER>GV_DATA_EMISSAO</FPPARAMETER>
+      <FPPARAMETER>GV_HORA_EMISSAO</FPPARAMETER>
+      <FPPARAMETER>GV_TOT1</FPPARAMETER>
+      <FPPARAMETER>GV_TOT2</FPPARAMETER>
+      <FPPARAMETER>GV_TOT3</FPPARAMETER>
+      <FPPARAMETER>GV_TOT4</FPPARAMETER>
+      <FPPARAMETER>GV_TOT5</FPPARAMETER>
+      <FPPARAMETER>GV_TOT6</FPPARAMETER>
+      <FPPARAMETER>GV_TOT7</FPPARAMETER>
+      <FPPARAMETER>GV_TOT8</FPPARAMETER>
+      <FPPARAMETER>GT_COMPARTIMENTOS</FPPARAMETER>
+      <FPPARAMETER>GV_PROD1</FPPARAMETER>
+      <FPPARAMETER>GV_PROD2</FPPARAMETER>
+      <FPPARAMETER>GV_PROD3</FPPARAMETER>
+      <FPPARAMETER>GV_PROD4</FPPARAMETER>
+      <FPPARAMETER>GV_PROD5</FPPARAMETER>
+      <FPPARAMETER>GV_PROD6</FPPARAMETER>
+      <FPPARAMETER>GV_PROD7</FPPARAMETER>
+      <FPPARAMETER>GV_PROD8</FPPARAMETER>
+     </OUTPUT_PARAMETERS>
+     <INITIALIZATION>
+      <FPCLINE>TYPES: BEGIN OF ty_compartimentos,</FPCLINE>
+      <FPCLINE>         compartimento TYPE /scmtms/res_cp_seq,</FPCLINE>
+      <FPCLINE>         volume1       TYPE char40,</FPCLINE>
+      <FPCLINE>         volume2       TYPE char40,</FPCLINE>
+      <FPCLINE>         volume3       TYPE char40,</FPCLINE>
+      <FPCLINE>         volume4       TYPE char40,</FPCLINE>
+      <FPCLINE>         volume5       TYPE char40,</FPCLINE>
+      <FPCLINE>         volume6       TYPE char40,</FPCLINE>
+      <FPCLINE>         volume7       TYPE char40,</FPCLINE>
+      <FPCLINE>         volume8       TYPE char40,</FPCLINE>
+      <FPCLINE>       END OF ty_compartimentos,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>       BEGIN OF ty_header_compartimentos,</FPCLINE>
+      <FPCLINE>         tanque_label TYPE char6,</FPCLINE>
+      <FPCLINE>         prod1        TYPE /scmtms/item_description,</FPCLINE>
+      <FPCLINE>         prod2        TYPE /scmtms/item_description,</FPCLINE>
+      <FPCLINE>         prod3        TYPE /scmtms/item_description,</FPCLINE>
+      <FPCLINE>         prod4        TYPE /scmtms/item_description,</FPCLINE>
+      <FPCLINE>         prod5        TYPE /scmtms/item_description,</FPCLINE>
+      <FPCLINE>         prod6        TYPE /scmtms/item_description,</FPCLINE>
+      <FPCLINE>         prod7        TYPE /scmtms/item_description,</FPCLINE>
+      <FPCLINE>         prod8        TYPE /scmtms/item_description,</FPCLINE>
+      <FPCLINE>       END OF ty_header_compartimentos,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>       tt_compartimentos        TYPE TABLE OF ty_compartimentos,</FPCLINE>
+      <FPCLINE>       tt_header_compartimentos TYPE TABLE OF ty_header_compartimentos,</FPCLINE>
+      <FPCLINE>       tt_header_texts          type table of /scmtms/item_description.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CONSTANTS: gc_data         TYPE char4 VALUE &apos;Data&apos; ##NO_TEXT,</FPCLINE>
+      <FPCLINE>           gc_hora         TYPE char4 VALUE &apos;Hora&apos; ##NO_TEXT,</FPCLINE>
+      <FPCLINE>           gc_divisor_data TYPE char1 VALUE &apos;/&apos; ##NO_TEXT,</FPCLINE>
+      <FPCLINE>           gc_divisor_hora TYPE char1 VALUE &apos;:&apos; ##NO_TEXT,</FPCLINE>
+      <FPCLINE>           gc_tanque       TYPE char6 VALUE &apos;TANQUE&apos; ##NO_TEXT,</FPCLINE>
+      <FPCLINE>           gc_2500         TYPE t001k-bukrs VALUE &apos;2500&apos; ##NO_TEXT,</FPCLINE>
+      <FPCLINE>           gc_3000         TYPE t001k-bukrs VALUE &apos;3000&apos; ##NO_TEXT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>DATA: lv_tdobname              TYPE tdobname,</FPCLINE>
+      <FPCLINE>      lt_itens                 TYPE zctgtm_ord_carreg_compart,</FPCLINE>
+      <FPCLINE>      lv_hold_produto          TYPE /scmtms/item_description,</FPCLINE>
+      <FPCLINE>      ls_header_compartimentos TYPE ty_header_compartimentos,</FPCLINE>
+      <FPCLINE>      lt_header_compartimentos TYPE tt_header_compartimentos,</FPCLINE>
+      <FPCLINE>      ls_compartimentos        TYPE ty_compartimentos,</FPCLINE>
+      <FPCLINE>      lt_compartimentos        TYPE tt_compartimentos,</FPCLINE>
+      <FPCLINE>      lv_zero_volume           TYPE string VALUE &apos;.00000000000000&apos;,</FPCLINE>
+      <FPCLINE>      lv_recurso               TYPE /scmtms/res_name,</FPCLINE>
+      <FPCLINE>      lv_tot1                  TYPE /scmtms/qua_gro_vol_val,</FPCLINE>
+      <FPCLINE>      lv_tot2                  TYPE /scmtms/qua_gro_vol_val,</FPCLINE>
+      <FPCLINE>      lv_tot3                  TYPE /scmtms/qua_gro_vol_val,</FPCLINE>
+      <FPCLINE>      lv_tot4                  TYPE /scmtms/qua_gro_vol_val,</FPCLINE>
+      <FPCLINE>      lv_tot5                  TYPE /scmtms/qua_gro_vol_val,</FPCLINE>
+      <FPCLINE>      lv_tot6                  TYPE /scmtms/qua_gro_vol_val,</FPCLINE>
+      <FPCLINE>      lv_tot7                  TYPE /scmtms/qua_gro_vol_val,</FPCLINE>
+      <FPCLINE>      lv_tot8                  TYPE /scmtms/qua_gro_vol_val,</FPCLINE>
+      <FPCLINE>      lv_tot1_aux              TYPE char40,</FPCLINE>
+      <FPCLINE>      lv_tot2_aux              TYPE char40,</FPCLINE>
+      <FPCLINE>      lv_tot3_aux              TYPE char40,</FPCLINE>
+      <FPCLINE>      lv_tot4_aux              TYPE char40,</FPCLINE>
+      <FPCLINE>      lv_tot5_aux              TYPE char40,</FPCLINE>
+      <FPCLINE>      lv_tot6_aux              TYPE char40,</FPCLINE>
+      <FPCLINE>      lv_tot7_aux              TYPE char40,</FPCLINE>
+      <FPCLINE>      lv_tot8_aux              TYPE char40.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>&quot; Logo</FPCLINE>
+      <FPCLINE>SELECT SINGLE b~erp_plant_id</FPCLINE>
+      <FPCLINE>  FROM /scmtms/d_torrot AS a</FPCLINE>
+      <FPCLINE>  JOIN /scmtms/d_torite AS b</FPCLINE>
+      <FPCLINE>  ON a~db_key = b~parent_key</FPCLINE>
+      <FPCLINE>  WHERE a~tor_id = @is_ordem_carregamento-orp_nro</FPCLINE>
+      <FPCLINE>    AND b~erp_plant_id IS NOT INITIAL</FPCLINE>
+      <FPCLINE>  INTO @DATA(lv_erp_plant_id).</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF lv_erp_plant_id IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>SELECT SINGLE bukrs</FPCLINE>
+      <FPCLINE>  FROM t001k</FPCLINE>
+      <FPCLINE>  INTO @DATA(lv_bukrs)</FPCLINE>
+      <FPCLINE>  WHERE bwkey = @lv_erp_plant_id.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>CASE lv_bukrs.</FPCLINE>
+      <FPCLINE>  WHEN gc_2500.</FPCLINE>
+      <FPCLINE>    lv_tdobname = &apos;ZLOGO_QUERODIESEL&apos;.</FPCLINE>
+      <FPCLINE>  WHEN gc_3000.</FPCLINE>
+      <FPCLINE>    lv_tdobname = &apos;ZLOGO_CHARRUA&apos;.</FPCLINE>
+      <FPCLINE>  WHEN OTHERS.</FPCLINE>
+      <FPCLINE>    lv_tdobname = &apos;ZLOGO_SIM_COMBUSTIVEIS&apos;.</FPCLINE>
+      <FPCLINE>ENDCASE.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE>PERFORM f_get_logo USING lv_tdobname</FPCLINE>
+      <FPCLINE>                 CHANGING gv_xstring.</FPCLINE>
+      <FPCLINE>CLEAR: lv_tdobname.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>DATA(lv_guarda_emissao_hora) = is_ordem_carregamento-emissao_hora.</FPCLINE>
+      <FPCLINE>&quot;BREAK-POINT.</FPCLINE>
+      <FPCLINE>&quot; Campos Data e Hora</FPCLINE>
+      <FPCLINE>MOVE is_ordem_carregamento-emissao_hora TO gv_data_emissao.</FPCLINE>
+      <FPCLINE>gv_data_emissao = |{ gc_data } { gv_data_emissao+6(2) }{ gc_divisor_data }{ gv_data_emissao+4(2) }{ gc_divisor_data }{ gv_data_emissao(4) }|.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>MOVE lv_guarda_emissao_hora TO gv_hora_emissao.</FPCLINE>
+      <FPCLINE>CALL FUNCTION &apos;CONVERSION_EXIT_TSTLC_OUTPUT&apos;</FPCLINE>
+      <FPCLINE>EXPORTING</FPCLINE>
+      <FPCLINE>  input  = gv_hora_emissao</FPCLINE>
+      <FPCLINE>IMPORTING</FPCLINE>
+      <FPCLINE>  output = gv_hora_emissao.</FPCLINE>
+      <FPCLINE>gv_hora_emissao = |{ gc_hora } { gv_hora_emissao+11(2) }{ gc_divisor_hora }{ gv_hora_emissao+14(2) }|.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>&quot; Cabeçalho tabela Compartimentos</FPCLINE>
+      <FPCLINE>lt_itens = is_ordem_carregamento-itens.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>sort lt_itens by item_descr.</FPCLINE>
+      <FPCLINE>delete adjacent duplicates from lt_itens comparing item_descr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SORT lt_itens BY ct_seq.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF lt_itens IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>ls_header_compartimentos-tanque_label = gc_tanque.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>LOOP AT lt_itens ASSIGNING FIELD-SYMBOL(&lt;fs_itens&gt;).</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF ls_header_compartimentos-prod1 IS INITIAL.</FPCLINE>
+      <FPCLINE>    ls_header_compartimentos-prod1 = &lt;fs_itens&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    lv_hold_produto = &lt;fs_itens&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    lv_recurso = &lt;fs_itens&gt;-res_id.</FPCLINE>
+      <FPCLINE>  ELSEIF ls_header_compartimentos-prod2 IS INITIAL AND lv_hold_produto &lt;&gt; &lt;fs_itens&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    ls_header_compartimentos-prod2 = &lt;fs_itens&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    lv_hold_produto = &lt;fs_itens&gt;-item_descr.</FPCLINE>
+      <FPCLINE>  ELSEIF ls_header_compartimentos-prod3 IS INITIAL AND lv_hold_produto &lt;&gt; &lt;fs_itens&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    ls_header_compartimentos-prod3 = &lt;fs_itens&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    lv_hold_produto = &lt;fs_itens&gt;-item_descr.</FPCLINE>
+      <FPCLINE>  ELSEIF ls_header_compartimentos-prod4 IS INITIAL AND lv_hold_produto &lt;&gt; &lt;fs_itens&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    ls_header_compartimentos-prod4 = &lt;fs_itens&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    lv_hold_produto = &lt;fs_itens&gt;-item_descr.</FPCLINE>
+      <FPCLINE>  ELSEIF ls_header_compartimentos-prod5 IS INITIAL AND lv_hold_produto &lt;&gt; &lt;fs_itens&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    ls_header_compartimentos-prod5 = &lt;fs_itens&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    lv_hold_produto = &lt;fs_itens&gt;-item_descr.</FPCLINE>
+      <FPCLINE>  ELSEIF ls_header_compartimentos-prod6 IS INITIAL AND lv_hold_produto &lt;&gt; &lt;fs_itens&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    ls_header_compartimentos-prod6 = &lt;fs_itens&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    lv_hold_produto = &lt;fs_itens&gt;-item_descr.</FPCLINE>
+      <FPCLINE>  ELSEIF ls_header_compartimentos-prod7 IS INITIAL AND lv_hold_produto &lt;&gt; &lt;fs_itens&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    ls_header_compartimentos-prod7 = &lt;fs_itens&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    lv_hold_produto = &lt;fs_itens&gt;-item_descr.</FPCLINE>
+      <FPCLINE>  ELSEIF ls_header_compartimentos-prod8 IS INITIAL AND lv_hold_produto &lt;&gt; &lt;fs_itens&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    ls_header_compartimentos-prod8 = &lt;fs_itens&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    lv_hold_produto = &lt;fs_itens&gt;-item_descr.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF ls_header_compartimentos IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  APPEND ls_header_compartimentos TO lt_header_compartimentos.</FPCLINE>
+      <FPCLINE>  IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>    gt_header_compartimentos = lt_header_compartimentos.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>lt_itens = is_ordem_carregamento-itens.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>&quot; Itens tabela Compartimentos</FPCLINE>
+      <FPCLINE>SORT lt_itens BY res_id ct_seq ASCENDING.</FPCLINE>
+      <FPCLINE>LOOP AT lt_itens ASSIGNING FIELD-SYMBOL(&lt;fs_itens_compartimentos&gt;).</FPCLINE>
+      <FPCLINE>  ls_compartimentos-compartimento = &lt;fs_itens_compartimentos&gt;-ct_seq.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF ls_header_compartimentos-prod1 = &lt;fs_itens_compartimentos&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    lv_tot1 = lv_tot1 + &lt;fs_itens_compartimentos&gt;-gro_vol_val.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    MOVE &lt;fs_itens_compartimentos&gt;-gro_vol_val TO ls_compartimentos-volume1.</FPCLINE>
+      <FPCLINE>    SHIFT ls_compartimentos-volume1 LEFT DELETING LEADING space.</FPCLINE>
+      <FPCLINE>    REPLACE lv_zero_volume INTO ls_compartimentos-volume1 WITH space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ELSEIF ls_header_compartimentos-prod2 = &lt;fs_itens_compartimentos&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    lv_tot2 = lv_tot2 + &lt;fs_itens_compartimentos&gt;-gro_vol_val.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    MOVE &lt;fs_itens_compartimentos&gt;-gro_vol_val TO ls_compartimentos-volume2.</FPCLINE>
+      <FPCLINE>    SHIFT ls_compartimentos-volume2 LEFT DELETING LEADING space.</FPCLINE>
+      <FPCLINE>    REPLACE lv_zero_volume INTO ls_compartimentos-volume2 WITH space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ELSEIF ls_header_compartimentos-prod3 = &lt;fs_itens_compartimentos&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    lv_tot3 = lv_tot3 + &lt;fs_itens_compartimentos&gt;-gro_vol_val.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    MOVE &lt;fs_itens_compartimentos&gt;-gro_vol_val TO ls_compartimentos-volume3.</FPCLINE>
+      <FPCLINE>    SHIFT ls_compartimentos-volume3 LEFT DELETING LEADING space.</FPCLINE>
+      <FPCLINE>    REPLACE lv_zero_volume INTO ls_compartimentos-volume3 WITH space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ELSEIF ls_header_compartimentos-prod4 = &lt;fs_itens_compartimentos&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    lv_tot4 = lv_tot4 + &lt;fs_itens_compartimentos&gt;-gro_vol_val.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    MOVE &lt;fs_itens_compartimentos&gt;-gro_vol_val TO ls_compartimentos-volume4.</FPCLINE>
+      <FPCLINE>    SHIFT ls_compartimentos-volume4 LEFT DELETING LEADING space.</FPCLINE>
+      <FPCLINE>    REPLACE lv_zero_volume INTO ls_compartimentos-volume4 WITH space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ELSEIF ls_header_compartimentos-prod5 = &lt;fs_itens_compartimentos&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    lv_tot5 = lv_tot5 + &lt;fs_itens_compartimentos&gt;-gro_vol_val.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    MOVE &lt;fs_itens_compartimentos&gt;-gro_vol_val TO ls_compartimentos-volume5.</FPCLINE>
+      <FPCLINE>    SHIFT ls_compartimentos-volume5 LEFT DELETING LEADING space.</FPCLINE>
+      <FPCLINE>    REPLACE lv_zero_volume INTO ls_compartimentos-volume5 WITH space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ELSEIF ls_header_compartimentos-prod6 = &lt;fs_itens_compartimentos&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    lv_tot6 = lv_tot6 + &lt;fs_itens_compartimentos&gt;-gro_vol_val.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    MOVE &lt;fs_itens_compartimentos&gt;-gro_vol_val TO ls_compartimentos-volume6.</FPCLINE>
+      <FPCLINE>    SHIFT ls_compartimentos-volume6 LEFT DELETING LEADING space.</FPCLINE>
+      <FPCLINE>    REPLACE lv_zero_volume INTO ls_compartimentos-volume6 WITH space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ELSEIF ls_header_compartimentos-prod7 = &lt;fs_itens_compartimentos&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    lv_tot7 = lv_tot7 + &lt;fs_itens_compartimentos&gt;-gro_vol_val.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    MOVE &lt;fs_itens_compartimentos&gt;-gro_vol_val TO ls_compartimentos-volume7.</FPCLINE>
+      <FPCLINE>    SHIFT ls_compartimentos-volume7 LEFT DELETING LEADING space.</FPCLINE>
+      <FPCLINE>    REPLACE lv_zero_volume INTO ls_compartimentos-volume7 WITH space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ELSEIF ls_header_compartimentos-prod8 = &lt;fs_itens_compartimentos&gt;-item_descr.</FPCLINE>
+      <FPCLINE>    lv_tot8 = lv_tot8 + &lt;fs_itens_compartimentos&gt;-gro_vol_val.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    MOVE &lt;fs_itens_compartimentos&gt;-gro_vol_val TO ls_compartimentos-volume8.</FPCLINE>
+      <FPCLINE>    SHIFT ls_compartimentos-volume8 LEFT DELETING LEADING space.</FPCLINE>
+      <FPCLINE>    REPLACE lv_zero_volume INTO ls_compartimentos-volume8 WITH space.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  APPEND ls_compartimentos TO lt_compartimentos.</FPCLINE>
+      <FPCLINE>  CLEAR ls_compartimentos.</FPCLINE>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF lv_tot1 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  MOVE lv_tot1 TO lv_tot1_aux.</FPCLINE>
+      <FPCLINE>  SHIFT lv_tot1_aux LEFT DELETING LEADING space.</FPCLINE>
+      <FPCLINE>  REPLACE lv_zero_volume INTO lv_tot1_aux WITH space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  gv_tot1 = lv_tot1_aux.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF lv_tot2 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  MOVE lv_tot2 TO lv_tot2_aux.</FPCLINE>
+      <FPCLINE>  SHIFT lv_tot2_aux LEFT DELETING LEADING space.</FPCLINE>
+      <FPCLINE>  REPLACE lv_zero_volume INTO lv_tot2_aux WITH space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  gv_tot2 = lv_tot2_aux.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF lv_tot3 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  MOVE lv_tot3 TO lv_tot3_aux.</FPCLINE>
+      <FPCLINE>  SHIFT lv_tot3_aux LEFT DELETING LEADING space.</FPCLINE>
+      <FPCLINE>  REPLACE lv_zero_volume INTO lv_tot3_aux WITH space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  gv_tot3 = lv_tot3_aux.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF lv_tot4 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  MOVE lv_tot4 TO lv_tot4_aux.</FPCLINE>
+      <FPCLINE>  SHIFT lv_tot4_aux LEFT DELETING LEADING space.</FPCLINE>
+      <FPCLINE>  REPLACE lv_zero_volume INTO lv_tot4_aux WITH space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  gv_tot4 = lv_tot4_aux.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF lv_tot5 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  MOVE lv_tot5 TO lv_tot5_aux.</FPCLINE>
+      <FPCLINE>  SHIFT lv_tot5_aux LEFT DELETING LEADING space.</FPCLINE>
+      <FPCLINE>  REPLACE lv_zero_volume INTO lv_tot5_aux WITH space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  gv_tot5 = lv_tot5_aux.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF lv_tot6 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  MOVE lv_tot6 TO lv_tot6_aux.</FPCLINE>
+      <FPCLINE>  SHIFT lv_tot6_aux LEFT DELETING LEADING space.</FPCLINE>
+      <FPCLINE>  REPLACE lv_zero_volume INTO lv_tot6_aux WITH space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  gv_tot6 = lv_tot6_aux.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF lv_tot7 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  MOVE lv_tot7 TO lv_tot7_aux.</FPCLINE>
+      <FPCLINE>  SHIFT lv_tot7_aux LEFT DELETING LEADING space.</FPCLINE>
+      <FPCLINE>  REPLACE lv_zero_volume INTO lv_tot7_aux WITH space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  gv_tot7 = lv_tot7_aux.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF lv_tot8 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  MOVE lv_tot8 TO lv_tot8_aux.</FPCLINE>
+      <FPCLINE>  SHIFT lv_tot8_aux LEFT DELETING LEADING space.</FPCLINE>
+      <FPCLINE>  REPLACE lv_zero_volume INTO lv_tot8_aux WITH space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  gv_tot8 = lv_tot8_aux.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>gt_compartimentos = lt_compartimentos.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>&quot; conversão volume</FPCLINE>
+      <FPCLINE>gv_volume = is_ordem_carregamento-volume * 1000.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+     </INITIALIZATION>
+     <FORMS>
+      <FPCLINE>FORM f_get_logo USING uv_name       TYPE TDOBNAME</FPCLINE>
+      <FPCLINE>                CHANGING cv_xstring TYPE xstring.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CALL METHOD cl_ssf_xsf_utilities=&gt;get_bds_graphic_as_bmp</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      p_object       = &apos;GRAPHICS&apos;</FPCLINE>
+      <FPCLINE>      p_name         = uv_name</FPCLINE>
+      <FPCLINE>      p_id           = &apos;BMAP&apos;</FPCLINE>
+      <FPCLINE>      p_btype        = &apos;BCOL&apos;</FPCLINE>
+      <FPCLINE>    RECEIVING</FPCLINE>
+      <FPCLINE>      p_bmp          = cv_xstring</FPCLINE>
+      <FPCLINE>    EXCEPTIONS</FPCLINE>
+      <FPCLINE>      not_found      = 1</FPCLINE>
+      <FPCLINE>      internal_error = 2</FPCLINE>
+      <FPCLINE>      OTHERS         = 3.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM.</FPCLINE>
+     </FORMS>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

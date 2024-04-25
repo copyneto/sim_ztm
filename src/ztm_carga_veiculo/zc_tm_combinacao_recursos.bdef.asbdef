@@ -1,0 +1,8 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_TM_COMBINACAO_RECURSOS alias _CombinacaoRec
+{
+use action processar;
+  use delete;
+}
